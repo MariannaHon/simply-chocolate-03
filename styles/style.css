@@ -109,17 +109,40 @@ button {
 
 .buy {
     background-color: #FD9222;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy:hover {
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
+
+.buy:focus {
+    background-color: #FCF1E0;
+    color: #FD9222;
 }
 
 .how {
     background-color: transparent;
     border: 1px solid #FFF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.how:hover {
+    background-color: #FAFAFA;
+    color: #FD9222;
+    border: 1px solid #FD9222;
+}
+
+.how:focus {
+    background-color: #FAFAFA;
+    color: #FD9222;
+    border: 1px solid #FD9222;
 }
 
 .scroll {
     display: flex;
     align-items: center;
-    gap: 14px;
 }
 
 .paragraf-first {
@@ -128,6 +151,25 @@ button {
     font-weight: 500;
     line-height: 1.29;
     letter-spacing: -0.03em;
+    padding-right: 14px;
+}
+
+.paragraf-first:hover {
+    color: #FD9222;
+}
+
+.paragraf-first:focus {
+    color: #FD9222;
+}
+
+.button-menu:hover {
+    background-color: #FD9222;
+    stroke: #FFF;
+}
+
+.button-menu:focus {
+    background-color: #FD9222;
+    stroke: #FFF;
 }
 
 .button-menu {
@@ -174,6 +216,15 @@ button {
 
 .icon-benefits {
     fill: #FD9222;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-benefits-container:hover {
+    background-color: #fff;
+}
+
+.icon-benefits-container:focus {
+    background-color: #fff;
 }
 
 .title-benefits {
@@ -862,7 +913,7 @@ input:checked+.check>.span-icon {
 
     .item-tastes {
         display: flex;
-        padding: 28px;
+        padding: 28px 56px;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -1034,6 +1085,17 @@ input:checked+.check>.span-icon {
         font-size: 18px;
         font-weight: 600;
         line-height: normal;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    .button-review:hover {
+        background-color: #FD9222;
+        color: #FFF;
+    }
+
+    .button-review:active {
+        background-color: #FD9222;
+        color: #FFF;
     }
 
     .list-ellipse {
@@ -1779,6 +1841,7 @@ input:checked+.check>.span-icon {
 
     .tastes .container {
         align-items: center;
+        padding: 0;
     }
 
     .list-tastes {
@@ -1791,7 +1854,7 @@ input:checked+.check>.span-icon {
 
     .item-tastes {
         display: flex;
-        padding: 28px 36px 28px 28px;
+        padding: 28px 55px;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -1919,11 +1982,6 @@ input:checked+.check>.span-icon {
         gap: 18px;
     }
 
-    /* .last-recept {
-        padding-bottom: 0;
-        margin-bottom: 0;
-    } */
-
     /* =============== Reviews =============== */
 
     .tab {
@@ -2007,6 +2065,17 @@ input:checked+.check>.span-icon {
         font-size: 18px;
         font-weight: 600;
         line-height: normal;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    .button-review:hover {
+        background-color: #FD9222;
+        color: #FFF;
+    }
+
+    .button-review:focus {
+        background-color: #FD9222;
+        color: #FFF;
     }
 
     .list-ellipse {
@@ -2173,6 +2242,7 @@ input:checked+.check>.span-icon {
     .icon-contacts {
         stroke: #111;
         fill: #FAFAFA;
+        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .list-nav-container {
@@ -2213,15 +2283,11 @@ input:checked+.check>.span-icon {
         transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .icon-link:hover {
+    .icon-contacts:hover {
         stroke: #FD9222;
     }
 
-    .icon-link:focus {
-        stroke: #FD9222;
-    }
-
-    .icon-link:active {
+    .icon-contacts:focus {
         stroke: #FD9222;
     }
 
@@ -2520,7 +2586,19 @@ input:checked+.check>.span-icon {
         font-size: 18px;
         font-weight: 600;
         line-height: normal;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    .button-review:hover {
+        background-color: #FD9222;
+        color: #FFF;
+    }
+
+    .button-review:active {
+        background-color: #FD9222;
+        color: #FFF;
+    }
+
 
     /* ============== Footer ============== */
 
