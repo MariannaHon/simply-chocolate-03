@@ -108,7 +108,6 @@ button {
 }
 
 .buy {
-    min-width: 144px;
     border: none;
     margin-right: 14px;
     background-color: #FD9222;
@@ -126,7 +125,6 @@ button {
 }
 
 .how {
-    min-width: 183px;
     text-align: center;
     background-color: transparent;
     border: 1px solid #FFF;
@@ -410,22 +408,6 @@ button {
     letter-spacing: -0.02em;
 }
 
-.line {
-    position: relative;
-}
-
-.line::after {
-    content: '';
-    position: absolute;
-    top: 70%;
-    left: 0;
-    bottom: 0;
-    display: block;
-    height: 1px;
-    border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.10);
-}
-
 /* =============== Backdrop ================ */
 
 .backdrop {
@@ -703,16 +685,15 @@ input:checked+.check>.span-icon {
 
     .section {
         max-width: 335px;
-        padding: 30px 0;
-        margin: 0 auto;
+        margin: 60px auto;
     }
 
     /* ============== Header ============== */
 
     .container {
         max-width: 375px;
-        padding: 20px;
         margin: 0 auto;
+        padding: 20px;
     }
 
     .navigation {
@@ -740,7 +721,6 @@ input:checked+.check>.span-icon {
     }
 
     .section-first .container {
-        padding: 0;
         gap: 32px;
     }
 
@@ -756,18 +736,13 @@ input:checked+.check>.span-icon {
 
     .button-first-container {
         display: flex;
-        width: 299px;
         flex-direction: column;
-        justify-content: flex-end;
         align-items: flex-start;
-        gap: 32px;
         flex-shrink: 0;
     }
 
-    .list-first-button {
+    .mob-container {
         display: flex;
-        align-items: flex-start;
-        gap: 14px;
     }
 
     .button-first {
@@ -788,30 +763,40 @@ input:checked+.check>.span-icon {
         border: 1px solid transparent;
     }
 
-    .scroll {
+    .link-icon-menu {
         display: flex;
         align-items: center;
-        gap: 12px;
-    }
-
-    .paragraf-first {
-        color: #FFF;
+        column-gap: 12px;
         font-size: 12px;
         font-weight: 500;
-        line-height: 1.17;
+        line-height: 1.29;
         letter-spacing: -0.03em;
+        color: #ffffff;
+        transition: color 250ms linear;
+        margin-top: 32px;
     }
 
-    .button-menu {
+    .link-icon-menu:hover,
+    .link-icon-menu:focus {
+        color: #fd9222;
+    }
+
+    .scroll-container {
         display: flex;
+        align-items: center;
+        justify-content: center;
         width: 28px;
         height: 28px;
-        padding: 6px;
-        align-items: center;
         border-radius: 50%;
-        fill: #FFF;
-        stroke: #FD9222;
-        border: none;
+        background-color: #ffffff;
+        fill: #fd9222;
+        transition: background-color 250ms linear, fill 250ms linear;
+    }
+
+    .link-icon-menu:hover .scroll-container,
+    .link-icon-menu:focus .scroll-container {
+        background-color: #fd9222;
+        stroke: #ffffff;
     }
 
     .icon-menu {
@@ -831,7 +816,8 @@ input:checked+.check>.span-icon {
     }
 
     .benefits .container {
-        padding: 0;
+        padding: 20px;
+        margin: 0;
     }
 
     .hiding {
@@ -931,6 +917,7 @@ input:checked+.check>.span-icon {
         line-height: 1.29; 
         letter-spacing: -0.02em;
         text-transform: uppercase;
+        margin-top: 25px;
     }
 
     .item-tastes:nth-child(odd) {
@@ -1132,9 +1119,12 @@ input:checked+.check>.span-icon {
     .bottom {
         max-width: 375px;
         background: #1E1823;
-        padding-top: 12px;
-        padding-bottom: 12px;
         color: #FFF;
+        padding: 32px 20px;
+    }
+
+    .bottom .container {
+        padding: 0;
     }
 
     .bottom .link-nav {
@@ -1640,10 +1630,10 @@ input:checked+.check>.span-icon {
         display: inline-flex;
         align-items: center;
         max-width: 768px;
+        padding: 0 32px;
     }
 
     .container {
-        padding: 0 32px;
         max-width: 768px;
         margin: 0 auto;
     }
@@ -1710,7 +1700,7 @@ input:checked+.check>.span-icon {
     .section-first {
         align-items: center;
         max-width: 704px;
-        margin: 0 auto 40px;
+        margin: 0 auto;
         padding: 671px 40px 40px;
         background-image: linear-gradient(180deg,
                     rgba(17, 17, 17, 0.00) 0%,
@@ -1738,43 +1728,53 @@ input:checked+.check>.span-icon {
         font-weight: 500;
         line-height: 1.21;
         letter-spacing: -0.03em;
+        margin-bottom: 40px;
     }
 
     .button-first-container {
         display: flex;
         align-items: flex-start;
         flex-shrink: 0;
-        gap: 150px;
     }
 
-    .list-first-button {
+    .mob-container {
         display: flex;
-        gap: 14px;
+        margin-right: auto;
     }
 
-    .scroll {
+    .link-icon-menu {
         display: flex;
         align-items: center;
-        gap: 14px;
-    }
-
-    .paragraf-first {
-        color: #FFF;
+        column-gap: 14px;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.29;
         letter-spacing: -0.03em;
+        color: #ffffff;
+        transition: color 250ms linear;
     }
 
-    .button-menu {
+    .link-icon-menu:hover,
+    .link-icon-menu:focus {
+        color: #fd9222;
+    }
+
+    .scroll-container {
         display: flex;
+        align-items: center;
+        justify-content: center;
         width: 38px;
         height: 38px;
-        padding: 8px;
-        align-items: center;
         border-radius: 50%;
-        fill: #FFF;
-        stroke: #FD9222;
+        background-color: #ffffff;
+        fill: #fd9222;
+        transition: background-color 250ms linear, fill 250ms linear;
+    }
+
+    .link-icon-menu:hover .scroll-container,
+    .link-icon-menu:focus .scroll-container {
+        background-color: #fd9222;
+        stroke: #ffffff;
     }
 
     .icon-menu {
@@ -1793,6 +1793,7 @@ input:checked+.check>.span-icon {
         background: #1E1823;
         gap: 32px;
         flex-shrink: 0;
+        margin-top: 40px;
     }
 
     .benefits .container {
@@ -1850,6 +1851,8 @@ input:checked+.check>.span-icon {
     }
 
     .item-tastes {
+        position: relative;
+        overflow: hidden;
         display: flex;
         padding: 28px 55px;
         flex-direction: column;
@@ -1885,26 +1888,22 @@ input:checked+.check>.span-icon {
         color: #fff;
     }
 
-    .overley-tastes {
-        position: relative;
-        overflow: hidden;
-    }
-
     .cards {
         padding: 20px;
-        justify-content: center;
-        align-items: center;
         border-radius: 15px;
-        text-overflow: ellipsis;
-        white-space: nowrap;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background-color: #FFF;
+        overflow: auto;
         transform: translateY(100%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .item-tastes:hover .cards {
+        transform: translateY(0%);
     }
 
     .title-cards {
@@ -1970,13 +1969,17 @@ input:checked+.check>.span-icon {
     }
 
     .list-recept-container {
-        width: 550px;
+        width: 614px;
         height: 356px;
+        margin-top: 20px;
     }
 
     .list-recept {
-        align-items: flex-start;
         gap: 18px;
+    }
+
+    .item-recept {
+        width: 464px;
     }
 
     /* =============== Reviews =============== */
@@ -2115,10 +2118,6 @@ input:checked+.check>.span-icon {
 
     .title-bottom {
         margin-right: 240px;
-    }
-
-    .line::after {
-        width: 704px;
     }
 
     .list-nav-bottom {
@@ -2316,6 +2315,11 @@ input:checked+.check>.span-icon {
     .button-first-container {
         display: flex;
         align-items: center;
+    }
+
+    .mob-container {
+        display: flex;
+        margin-right: auto;
     }
 
     .link-icon-menu {
